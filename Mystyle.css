@@ -1,0 +1,50 @@
+.topnav {
+    background-color: #0c2e65;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #3875ae;
+    color: white;
+  }
+  .palmtree {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("palmtree.mp4");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: wind 30s linear infinite;
+    z-index: -1;
+  }
+  @keyframes wind {
+    0% {
+      background-position: center center;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: center center;
+    }
+  }
